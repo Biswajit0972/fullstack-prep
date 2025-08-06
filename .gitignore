@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+package-lock.json
+
+# dotenv environment variables
+.env
+
+# logs
+logs/
+*.log
+
+# build output
+dist/
+build/
+.next/
+out/
+
+# system files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
