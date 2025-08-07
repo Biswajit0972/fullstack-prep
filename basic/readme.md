@@ -13,12 +13,12 @@
 
 Modules are a collections  of code  that provides some functionality.
 
-In node js we have 3 modules:
+In node.js we have 3 modules:
 1. Built  in modules
 2. 3rd  party modules,downloaded by npm.
 3. Own modules, Custom modules.
 
-    // Today we goona learn FILE SYSTEM in node JS using fs
+    // Today we goona learn FILE SYSTEM in node.JS using fs
     * fs basically an object, which provides some functions to interact file system in our system.
     * What is require function?
     =>  Require function is a parameter of a wrapper function developed by Node.js developer team. When we run some code in Node.js all the source code automatically wrapped  by wrapper function, that's why require function useful in node.js env. not in Browser.
