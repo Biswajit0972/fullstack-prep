@@ -1,9 +1,9 @@
 * Node.js core apis are built around **idiomatic asynchronous event-driven architecture**.
 
 what are the events in Node.js  ?
-* Node.js follows  event driven architecture. where actions (event) (emitters) triggers specific function object (listeners).
+* Node.js follows event-driven architecture. where actions (event) (emitters) triggers specific function object (listeners).
 * The eventEmitter class in the events  module is used to handel events. (emit event) are instance of  evenEmitter class.
-* Events in Node.js work  like a publisher-subscriber model,where an event is emitted  and event  listener response.
+* Events in Node.js work  like a publisher-subscriber model,where an event is emitted and event listener response.
 
 Why use events ?
 * Helps in async programming without called back hell.
@@ -21,3 +21,16 @@ Event Emitters: Objects in Node.js that emit events; many core modules, such as 
 Listeners/Callbacks: Functions attached to events and executed when the events are emitted.
 
 Event Loop: The mechanism that watches for events and invokes the registered callbacks without blocking other operations.
+
+What are Buffers in Node.js?
+* A buffer is a temporary storage area for binary data.
+* Node.js does not support direct binary manipulation (like c/c++) so buffers help handle raw data efficiently.
+* Used mostly when dealing with file streams, network data, and binary protocols.
+
+Why Do we Need Buffers?
+* JavaScript are UTF-16 encoded, making direct binary data handling inefficient.
+* Buffer store binary data outside v8's heap.
+* Useful When working with:
+    * File system.
+    * Networking (TCP, UDP, Web-Scoket)
+    * Streams (handling chunks of data).

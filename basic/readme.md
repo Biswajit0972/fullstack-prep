@@ -265,3 +265,39 @@ const readData = async () => {
 ---
 
 
+* Node.js core apis are built around **idiomatic asynchronous event-driven architecture**.
+
+what are the events in Node.js  ?
+* Node.js follows event-driven architecture. where actions (event) (emitters) triggers specific function object (listeners).
+* The eventEmitter class in the events  module is used to handel events. (emit event) are instance of  evenEmitter class.
+* Events in Node.js work  like a publisher-subscriber model,where an event is emitted and event listener response.
+
+Why use events ?
+* Helps in async programming without called back hell.
+* Mostly used in real time  application  like chat, gaming.
+* core modules in node.js use events internally. like fs,http.
+
+Node.js is event-driven because its core architecture is designed to efficiently handle multiple tasks at once by reacting to events (such as incoming HTTP requests, file I/O completions, or timers) instead of following a traditional, sequential execution flow. This model allows Node.js to maximize scalability, responsiveness, and resource efficiency, especially for I/O-bound and real-time applications.
+
+The event-driven architecture in Node.js relies on several key concepts:
+
+Events: Signals that something of interest has happened, like receiving data or a user action.
+
+Event Emitters: Objects in Node.js that emit events; many core modules, such as HTTP servers and streams, are event emitters.
+
+Listeners/Callbacks: Functions attached to events and executed when the events are emitted.
+
+Event Loop: The mechanism that watches for events and invokes the registered callbacks without blocking other operations.
+
+What are Buffers in Node.js?
+* A buffer is a temporary storage area for binary data.
+* Node.js does not support direct binary manipulation (like c/c++) so buffers help handle raw data efficiently.
+* Used mostly when dealing with file streams, network data, and binary protocols.
+
+Why Do we Need Buffers?
+* JavaScript are UTF-16 encoded, making direct binary data handling inefficient.
+* Buffer store binary data outside v8's heap.
+* Useful When working with:
+    * File system.
+    * Networking (TCP, UDP, Web-Scoket)
+    * Streams (handling chunks of data).
