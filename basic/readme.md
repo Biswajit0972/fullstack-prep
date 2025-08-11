@@ -267,14 +267,14 @@ const readData = async () => {
 
 * Node.js core apis are built around **idiomatic asynchronous event-driven architecture**.
 
-what are the events in Node.js  ?
+what are the events in Node.js ?
 * Node.js follows event-driven architecture. where actions (event) (emitters) triggers specific function object (listeners).
-* The eventEmitter class in the events  module is used to handel events. (emit event) are instance of  evenEmitter class.
-* Events in Node.js work  like a publisher-subscriber model,where an event is emitted and event listener response.
+* The eventEmitter class in the events module is used to handel events. (emit event) are instance of  evenEmitter class.
+* Events in Node.js work like a publisher-subscriber model,where an event is emitted and event listener response.
 
 Why use events ?
-* Helps in async programming without called back hell.
-* Mostly used in real time  application  like chat, gaming.
+* Helps in async programming without call back hell.
+* Mostly used in real time application like chat, gaming.
 * core modules in node.js use events internally. like fs,http.
 
 Node.js is event-driven because its core architecture is designed to efficiently handle multiple tasks at once by reacting to events (such as incoming HTTP requests, file I/O completions, or timers) instead of following a traditional, sequential execution flow. This model allows Node.js to maximize scalability, responsiveness, and resource efficiency, especially for I/O-bound and real-time applications.
