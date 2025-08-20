@@ -1,0 +1,9 @@
+What is Authentication?
+Authentication is the process of verifying the identity of a user.
+
+What is Authorization?
+Authorization is the process of granting or denying access to resources based on authenticated identities and permissions.
+
+Session is basically two types.
+    1. Stateless. (Basically long trem use cases using JWT)
+    2. Stateful.  (EveryLogin we create a new login session for each request)
