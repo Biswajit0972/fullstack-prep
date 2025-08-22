@@ -11,6 +11,6 @@ app.get('/', function (req, res) {
         .end("Hello  world  from   authentication session")
 });
 
-app.po
+app.use()
 
 app.listen(3000, () => console.log("Server is listening on port 3000"));

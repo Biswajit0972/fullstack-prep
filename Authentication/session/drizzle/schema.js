@@ -5,7 +5,7 @@ const userTable = drizzle.pgTable("users", {
     name: drizzle.varchar("name", {length: 255}).notNull(),
     email: drizzle.varchar("email", {length: 255}).notNull().unique(),
     age: drizzle.integer().notNull(),
-    password: drizzle.varchar("255").notNull(),
+    password: drizzle.varchar("password",{length:"255"}).notNull(),
     salt: drizzle.text().notNull(),
 })
 

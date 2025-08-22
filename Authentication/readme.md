@@ -72,3 +72,28 @@ It makes sure that once a user logs in, they don’t need to re-enter credential
 - **Session** = Persist login state across HTTP requests (via JWT = stateless, via session ID = stateful).
 
 ***
+
+### 🥵 High level overview of stateful authentication
+
+* **User logs in**
+* **Server creates a session**
+* Server sends session ID to client
+* Client stores session ID in cookie
+* Client sends session ID with every request
+* Server uses session ID to fetch user's session
+* Server verifies session
+* Server sends response to client
+* Client receives response
+* Client logout
+* Server deletes session**
+
+### 🗼 Authentication flowchart using jwt
+
+
+### AUTHENTICATION vs AUTHORIZATION
+| Authentication | Authorization |
+|----------------|----------------|
+| Verify identity | Determine what an authenticated user is allowed to do |
+| Stateless | Stateful |
+| Token-based | Server-side session |
+| JWT | Session ID |
